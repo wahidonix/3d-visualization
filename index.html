@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Data Visualizations</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-content {
+        flex-grow: 1;
+        padding: 10px;
+      }
+      .card h2 {
+        margin: 0;
+        font-size: 1.5em;
+      }
+      .card p {
+        padding: 0 10px 10px;
+      }
+      .card a {
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: background-color 0.3s;
+      }
+      .card a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>3D Data Visualizations</h1>
+    </header>
+    <main>
+      <div class="card">
+        <img src="assets/images/hexagon-layer.png" alt="Visualization 1" />
+        <div class="card-content">
+          <h2>Hexagon Layer Demo</h2>
+          <p>
+            Personal injury road accidents in GB from 1979 <br />
+            The layer aggregates data within the boundary of each hexagon cell.
+          </p>
+        </div>
+        <a href="hexagon-layer.html">Dive In</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/arc-layer.png" alt="Visualization 2" />
+        <div class="card-content">
+          <h2>Arc Layer Demo</h2>
+          <p>
+            United States County-to-county Migration <br />
+            People moving in and out of between 2009-2013.
+          </p>
+        </div>
+        <a href="arc-layer.html">Dive In</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/geojson-layer.png" alt="Visualization 3" />
+        <div class="card-content">
+          <h2>GeoJson Layer Demo</h2>
+          <p>Average property value in Vancouver since 2003.</p>
+        </div>
+        <a href="geojson-layer.html">Dive In</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/orthographic-view.png" alt="Visualization 4" />
+        <div class="card-content">
+          <h2>Orthographic View</h2>
+          <p>
+            Orthographic View where the size of the country is determined by
+            ratio of the number of people and the landmass of the country.
+          </p>
+        </div>
+        <a href="orthographic-view.html">Dive In</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/collision-filter.png" alt="Visualization 5" />
+        <div class="card-content">
+          <h2>Collision Filter</h2>
+          <p>
+            Analyze complex data in relational format. <br />
+            This demo shows the relations between Game Of Thrones characters.
+          </p>
+        </div>
+        <a href="collision-filter.html">Dive In</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/terrain.png" alt="Visualization 6" />
+        <div class="card-content">
+          <h2>Terrain</h2>
+          <p>
+            Visualize terrains using heightmaps. <br />This visualization shows
+            hiking paths and their ratings.
+          </p>
+        </div>
+        <a href="terrain.html">Dive In</a>
+      </div>
+    </main>
+  </body>
+</html>
